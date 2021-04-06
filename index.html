@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/e28508a47c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card" style="width: 25rem">
+            <div class="card-body">
+              <div class="d-grid gap-2">
+                <div class="input-group mb-3">
+                  <form id="search-form">
+                    <input
+                      type="search"
+                      id="city-input"
+                      placeholder="Enter City"
+                      aria-label="Your City"
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      class="btn btn-outline-warning"
+                      type="submit"
+                      id="search"
+                    >
+                      Search
+                    </button>
+                  </form>
+                </div>
+                <h1 class="city" id="city">Tallinn</h1>
+                <p class="current-date" id="realTime">Friday, 14:22</p>
+                <h2 class="current-temp">
+                  <span class="weather-now" id="weather-now">-4</span>
+                  <span class="units"
+                    ><a href="#" id="celsius-link">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+                  <i class="fas fa-sun sun-icon"></i>
+                </h2>
+                <br />
+                <div class="row row-cols-2">
+                  <ul class="weekdays">
+                    <li>Saturday</li>
+                    <li>Sunday</li>
+                    <li>Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                  </ul>
+                  <ul class="temperature">
+                    <li>-5°C /-7°C <i class="far fa-sun first"></i></li>
+                    <li>-4°C /-8°C <i class="far fa-snowflake second"></i></li>
+                    <li>0°C /-5°C <i class="fas fa-cloud-sun third"></i></li>
+                    <li>2°C /-3°C <i class="fas fa-cloud-sun fourth"></i></li>
+                    <li>2°C /-4°C <i class="fas fa-cloud-rain fifth"></i></li>
+                  </ul>
+                </div>
+                <h3 class="quote">Snuggle up!</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
