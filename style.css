@@ -83,3 +83,10 @@ h3 {
 .temperature .fifth {
   font-size: 26px;
 }
+.link {
+  margin: 0;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
